@@ -11,10 +11,19 @@ document.getElementById('posLoginButton').addEventListener('click', function() {
             timer: 1500
           });
           setTimeout(() => {
-            window.location.href = 'menu.html';
+            window.location.href = 'controllerPanel.html';
           }, 2000);
        
     } else {
         alert('Invalid username or password.');
     }
 });
+
+
+function refreshTime() {
+  const timeDisplay = document.getElementById("time");
+  const dateString = new Date().toLocaleString();
+  const formattedString = dateString.replace(", ", " - ");
+  timeDisplay.textContent = formattedString;
+}
+  setInterval(refreshTime, 1000);
