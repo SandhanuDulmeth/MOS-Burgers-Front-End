@@ -1,0 +1,61 @@
+/* Base styles */
+
+body {
+    background-image: linear-gradient(rgba(136, 22, 22, 0.7), rgba(176, 14, 14, 0.7)), url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #e9ecef; 
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1; 
+}
+
+.table th {
+    background-color: #0d3d6e; 
+    color: white; 
+}
+
+.table td, .table th {
+    vertical-align: middle; 
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+.btn-add-item {
+    margin-top: auto;
+}
+
+.cart-item {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.cart-item input {
+    width: 60px;
+}
+
+.btn-remove {
+    margin-left: 1rem;
+}
+
+.total-price {
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .cart-item input {
+        width: 40px;
+    }
+}
