@@ -38,8 +38,7 @@ function renderMenu(items, code) {
             <img src="${item.imageUrl}" class="card-img-top" alt="${item.name}">
             <div class="card-body dark-brown">
                 <h5 class="card-title">${item.name}</h5>
-                <p class="card-text">Price: Rs.${item.price}</p>
-                <button class="btn btn-primary btn-add-item button" onclick="addToCart(${code[index]})">Add item</button>
+                <button class="btn btn-primary btn-add-item button" onclick="addToCart(${code[index]})">Add  Rs.${item.price}</button>
             </div>
         `;
         col.appendChild(card);

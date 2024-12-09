@@ -4,14 +4,14 @@
         "itemtype": "Burger",
         "name": "Classic Burger (Large)",
         "price": "750.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://www.kitchensanctuary.com/wp-content/uploads/2021/05/Double-Cheeseburger-tall-FS-38.jpg"
     },
     {
         "itemno": "B1002",
         "itemtype": "Burger",
         "name": "Classic Burger (Regular)",
         "price": "1500.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://www.kitchensanctuary.com/wp-content/uploads/2021/05/Double-Cheeseburger-tall-FS-38.jpg"
     },
     {
         "itemno": "B1003",
