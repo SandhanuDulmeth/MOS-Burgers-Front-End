@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function Promotion() {
     Swal.fire({
-        imageUrl: "pictures/ControllerPanel/Offer01.png",
+        imageUrl: "Images/ControllerPanel/Offer01.png",
         imageWidth: 350,
         imageHeight: 300,
         imageAlt: "Custom image"
