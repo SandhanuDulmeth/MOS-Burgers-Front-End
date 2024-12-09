@@ -4,7 +4,7 @@
         "itemtype": "Burger",
         "name": "Classic Burger (Large)",
         "price": "750.00",
-        "imageUrl": "https://www.kitchensanctuary.com/wp-content/uploads/2021/05/Double-Cheeseburger-tall-FS-38.jpg"
+        "imageUrl": "https://brookrest.com/wp-content/uploads/2020/05/AdobeStock_282247995-scaled.jpeg"
     },
     {
         "itemno": "B1002",
@@ -18,307 +18,307 @@
         "itemtype": "Burger",
         "name": "Turkey Burger",
         "price": "1600.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://tastesbetterfromscratch.com/wp-content/uploads/2020/07/Turkey-Burgers-1.jpg"
     },
     {
         "itemno": "B1004",
         "itemtype": "Burger",
         "name": "Chicken Burger (Large)",
         "price": "1400.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.VnX4V7g1FaEuRELPYHKgeAHaF6?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1005",
         "itemtype": "Burger",
         "name": "Chicken Burger (Regular)",
         "price": "800.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://simply-delicious-food.com/wp-content/uploads/2018/11/spicy-chicken-burgers-3.jpg"
     },
     {
         "itemno": "B1006",
         "itemtype": "Burger",
         "name": "Cheese Burger (Large)",
         "price": "1000.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://th.bing.com/th/id/R.6524c51aef984612cea42c077ba07852?rik=SvwC%2bIKPqyswwg&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1007",
         "itemtype": "Burger",
         "name": "Cheese Burger (Regular)",
         "price": "600.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://th.bing.com/th/id/R.48786f83fd935da5b02c3b5d2ab9e1a0?rik=XFYcL1dDWHUJzQ&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1008",
         "itemtype": "Burger",
         "name": "Bacon Burger",
         "price": "650.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://external-preview.redd.it/IS2-8uvnN1LnqJr2ko-f00GFSS2pXn0dMPm4RNF0R9E.jpg?auto=webp&s=2c4886c25f02bcd34b07485d10d8708736f9ccf3"
     },
     {
         "itemno": "B1009",
         "itemtype": "Burger",
         "name": "Shawarma Burger",
         "price": "800.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://mincerecipes.info/wp-content/uploads/2022/03/satisfying-bbq-shawarma-burger.jpg"
     },
     {
         "itemno": "B1010",
         "itemtype": "Burger",
         "name": "Olive Burger",
         "price": "1800.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://cdn.tasteatlas.com/images/dishes/835427166e184350a75a4f2a799a2ba9.jpg?mw=2000"
     },
     {
         "itemno": "B1012",
         "itemtype": "Burger",
         "name": "Double-Cheese Burger",
         "price": "1250.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://www.kitchensanctuary.com/wp-content/uploads/2021/05/Double-Cheeseburger-wide-FS-and-foodporn-55.jpg"
     },
     {
         "itemno": "B1013",
         "itemtype": "Burger",
         "name": "Crispy Chicken Burger (Regular)",
         "price": "1200.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-tall-FS-4512.jpg"
     },
     {
         "itemno": "B1014",
         "itemtype": "Burger",
         "name": "Crispy Chicken Burger (Large)",
         "price": "1600.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.WpcS2R51raHf-01naeH3CwHaJQ?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1015",
         "itemtype": "Burger",
         "name": "Paneer Burger",
         "price": "900.00",
-        "imageUrl": "Images/menuBurger.jpg"
+        "imageUrl": "https://th.bing.com/th/id/R.c6aa32c6409f16773ac70ff524cb0a85?rik=C8kvXtoqgvWeHQ&riu=http%3a%2f%2fwww.sawadindiaka.in%2fwp-content%2fuploads%2f2021%2f05%2f7132f972-c0ac-400a-afa3-6e811c93bd48-1.jpg&ehk=2Sqc59BJyvQB4jPxkPdyqUCGsF5PeT9WPcMQ%2be6Jf5A%3d&risl=&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1016",
         "itemtype": "Submarine",
         "name": "Crispy Chicken Submarine (Large)",
         "price": "2000.00",
-        "imageUrl": "Images/menuSubmarine.jpeg"
+        "imageUrl": "https://imageproxy.wolt.com/menu/menu-images/609e47d02cd00bdaa8bc2a90/5617cde4-546f-11ed-9a34-eae5e87875e7_crispy_fried_chicken_sub.jpeg?w=1920"
     },
     {
         "itemno": "B1017",
         "itemtype": "Submarine",
         "name": "Crispy Chicken Submarine (Regular)",
         "price": "1500.00",
-        "imageUrl": "Images/menuSubmarine.jpeg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.xTIPjO1jcdY4_cwl0aqehwHaE8?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1018",
         "itemtype": "Submarine",
         "name": "Chicken Submarine (Large)",
         "price": "1800.00",
-        "imageUrl": "Images/menuSubmarine.jpeg"
+        "imageUrl": "https://quickee.com/wp-content/uploads/2022/10/mHxVs5jfdz.jpg"
     },
     {
         "itemno": "B1019",
         "itemtype": "Submarine",
         "name": "Chicken Submarine (Regular)",
         "price": "1400.00",
-        "imageUrl": "Images/menuSubmarine.jpeg"
+        "imageUrl": "https://th.bing.com/th/id/R.1b893b026f99b3352d3de8da0c06c394?rik=We5VohkDU9M%2fAA&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1020",
         "itemtype": "Submarine",
         "name": "Grinder Submarine",
         "price": "2300.00",
-        "imageUrl": "Images/menuSubmarine.jpeg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.uuQHG4j8ofD9kdiys3VSCgHaLH?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1021",
         "itemtype": "Submarine",
         "name": "Cheese Submarine",
         "price": "2200.00",
-        "imageUrl": "Images/menuSubmarine.jpeg"
+        "imageUrl": "https://th.bing.com/th/id/R.4bf4609b6d9265e51c12f4a80f467cdd?rik=EsM2r1nQ9Sk8gw&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1022",
         "itemtype": "Submarine",
         "name": "Double Cheese n Chicken Submarine",
         "price": "1900.00",
-        "imageUrl": "Images/menuSubmarine.jpeg"
+        "imageUrl": "https://cullyskitchen.com/wp-content/uploads/2022/07/Untitled-design-50-1.png"
     },
     {
         "itemno": "B1023",
         "itemtype": "Submarine",
         "name": "Special Horgie Submarine",
         "price": "2800.00",
-        "imageUrl": "Images/menuSubmarine.jpeg"
+        "imageUrl": "https://parade.com/.image/t_share/MTkwNTc5NTIyNDMyODcwMjY4/amighettis-submarine-sandwich.jpg"
     },
     {
         "itemno": "B1024",
         "itemtype": "Submarine",
         "name": "MOS Special Submarine",
         "price": "3000.00",
-        "imageUrl": "Images/menuSubmarine.jpeg"
+        "imageUrl": "https://img.freepik.com/premium-photo/submarine-sandwich-spot-delight-white-background_1188475-737.jpg"
     },
     {
         "itemno": "B1025",
         "itemtype": "Fries",
         "name": "Steak Fries (Large)",
         "price": "1200.00",
-        "imageUrl": "Images/menuFries.jpg"
+        "imageUrl": "https://i5.walmartimages.com/asr/ea2f6182-643f-47fd-bb8b-d057c8c4ff12_6.add99d48cd6c53cca7f9909643e93c0f.jpeg"
     },
     {
         "itemno": "B1026",
         "itemtype": "Fries",
         "name": "Steak Fries (Medium)",
         "price": "600.00",
-        "imageUrl": "Images/menuFries.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.oMbc2j4loxinl0jZXcyAjgHaE8?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1027",
         "itemtype": "Fries",
         "name": "French Fries (Large)",
         "price": "800.00",
-        "imageUrl": "Images/menuFries.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.GqUvr8wmgKYa7LL8YpnGMAHaE7?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1028",
         "itemtype": "Fries",
         "name": "French Fries (Medium)",
         "price": "650.00",
-        "imageUrl": "Images/menuFries.jpg"
+        "imageUrl": "https://th.bing.com/th/id/R.47cbf1240d359cb098908daabf449497?rik=FTRfNBanzT9x7g&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1029",
         "itemtype": "Fries",
         "name": "French Fries (Small)",
         "price": "450.00",
-        "imageUrl": "Images/menuFries.jpg"
+        "imageUrl": "https://www.thedailymeal.com/img/gallery/the-best-fast-food-french-fries-ranked/l-intro-1679437907.jpg"
     },
     {
         "itemno": "B1030",
         "itemtype": "Fries",
         "name": "Sweet Potato Fries (Large)",
         "price": "600.00",
-        "imageUrl": "Images/menuFries.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.fDh4E15OWpA1N2G02TeFlgHaLD?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1031",
         "itemtype": "Pasta",
-        "name": "Chicken n Cheese Pasta",
+        "name": "Chicken Cheese Pasta",
         "price": "1600.00",
-        "imageUrl": "Images/menuPasta.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.Vzhu4ysoqX7kV9egvByRegHaLJ?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1032",
         "itemtype": "Pasta",
         "name": "Chicken Penne Pasta",
         "price": "1700.00",
-        "imageUrl": "Images/menuPasta.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.BqzpHgLERrk5jgB631R-PgHaLG?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1033",
         "itemtype": "Pasta",
         "name": "Ground Turkey Pasta Bake",
         "price": "2900.00",
-        "imageUrl": "Images/menuPasta.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.b3OyZrMHvP20HIQ2ZZj5VwHaLG?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1034",
         "itemtype": "Pasta",
         "name": "Creamy Shrimp Pasta",
         "price": "2000.00",
-        "imageUrl": "Images/menuPasta.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.Y6pMtXJxP1yzFKaneHSFqQHaLH?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1035",
         "itemtype": "Pasta",
         "name": "Lemon Butter Pasta",
         "price": "1950.00",
-        "imageUrl": "Images/menuPasta.jpg"
+        "imageUrl": "https://th.bing.com/th/id/R.d9249f68eda3c95f130ef527f3b56f76?rik=R16A5uw0CkrUwg&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1036",
         "itemtype": "Pasta",
         "name": "Tagliatelle Pasta",
         "price": "2400.00",
-        "imageUrl": "Images/menuPasta.jpg"
+        "imageUrl": "https://th.bing.com/th/id/R.9942c0d67c511e124eed82887695578f?rik=EPZ9m%2b%2bTK%2bl4FQ&riu=http%3a%2f%2fwww.archanaskitchen.com%2fimages%2farchanaskitchen%2f1-Author%2fsibyl_sunitha%2fHomemade_Tagliatelle_Pasta_with_Capers_and_Bell_peppers_Recipe.jpg&ehk=2M%2bNOToiPUT5cWXdjuAlREYp8og3K8jy%2by0oYGBvww4%3d&risl=&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1037",
         "itemtype": "Pasta",
         "name": "Baked Ravioli",
         "price": "2000.00",
-        "imageUrl": "Images/menuPasta.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.twlF9b2plS0mU8tkHzry2AHaLH?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1038",
         "itemtype": "Chicken",
         "name": "Fried Chicken (Small)",
         "price": "1200.00",
-        "imageUrl": "Images/menuChicken.jpg"
+        "imageUrl": "https://th.bing.com/th/id/R.5c4bbbeab1be47dcebeb4c1eb9d16f5a?rik=7YDgQkNKxODS4g&riu=http%3a%2f%2fassets.epicurious.com%2fphotos%2f54b27e739a93d64c380b00ea%2fmaster%2fpass%2f368790_fried-chicken_1x1.jpg&ehk=pv7bVArM8FYrZ6Wns8NQAEZLg0FgnoZ1N1o8pEG64eY%3d&risl=&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1039",
         "itemtype": "Chicken",
         "name": "Fried Chicken (Regular)",
         "price": "2300.00",
-        "imageUrl": "Images/menuChicken.jpg"
+        "imageUrl": "https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Southern-Fried-Chicken-scaled.jpg"
     },
     {
         "itemno": "B1040",
         "itemtype": "Chicken",
         "name": "Fried Chicken (Large)",
         "price": "3100.00",
-        "imageUrl": "Images/menuChicken.jpg"
+        "imageUrl": "https://cdn.abcotvs.com/dip/images/5230298_shutterstock_547315051.jpg"
     },
     {
         "itemno": "B1041",
         "itemtype": "Chicken",
         "name": "Hot Wings (Large)",
         "price": "2400.00",
-        "imageUrl": "Images/menuChicken.jpg"
+        "imageUrl": "https://th.bing.com/th/id/R.e9fa06478065f1382d2a1c694c196b41?rik=aOrXAsDFYd45xw&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1042",
         "itemtype": "Chicken",
         "name": "Devilled Chicken (Large)",
         "price": "900.00",
-        "imageUrl": "Images/menuChicken.jpg"
+        "imageUrl": "https://th.bing.com/th/id/R.09ab0ebe0dcc0fbbdea4de140ed572d5?rik=EVn2eP%2fxXbin5w&pid=ImgRaw&r=0"
     },
     {
         "itemno": "B1043",
         "itemtype": "Chicken",
         "name": "BBQ Chicken (Regular)",
         "price": "2100.00",
-        "imageUrl": "Images/menuChicken.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.I046CqiSZVco7qu3tRUDAAHaFj?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1044",
         "itemtype": "Beverage",
         "name": "Pepsi (330ml)",
         "price": "990.00",
-        "imageUrl": "Images/menuBeverage.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.ytqsRjQxj46HjKOwg52EKwHaJQ?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1045",
         "itemtype": "Beverage",
         "name": "Coca-Cola (330ml)",
         "price": "1230.00",
-        "imageUrl": "Images/menuBeverage.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.cI500T2A_5F9bu5r8SOHvgHaE6?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1046",
         "itemtype": "Beverage",
         "name": "Sprite (330ml)",
         "price": "1500.00",
-        "imageUrl": "Images/menuBeverage.jpg"
+        "imageUrl": "https://th.bing.com/th/id/OIP.VzJNn4mFPB7mpDe5NGg0twHaGI?rs=1&pid=ImgDetMain"
     },
     {
         "itemno": "B1047",
         "itemtype": "Beverage",
         "name": "Mirinda (330ml)",
         "price": "850.00",
-        "imageUrl": "Images/menuBeverage.jpg"
+        "imageUrl": "https://th.bing.com/th/id/R.a407fea63309d27e6e9a6b77635bfb8f?rik=DDnXo8nFAYZ6eg&pid=ImgRaw&r=0"
     }
 ]
