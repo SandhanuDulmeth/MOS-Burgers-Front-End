@@ -1,0 +1,26 @@
+.imageCss img {
+    width: 150px;
+}
+
+.btnLogin {
+    border-radius: 25px;
+    width: 200px;
+    height: 40px;
+    font-size: 1.2rem; /* Use rem for scalability */
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: #1c1c6d;
+    color: white;
+    border: none;
+    text-align: center; /* Ensures text is centered */
+}
+
+.btn1 {
+    border-radius: 25px;
+    height: 40px;
+    font-size: 1.2rem; /* Use rem for scalability */
+    font-weight: 600;
+    padding: 0 15px;
+    line-height: 40px;
+    text-align: center;
+}

@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu and Shopping Cart</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/menu_styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Item Management</title>
+        <link rel="stylesheet" href="Styles/itemStyles.css" />
+        <link rel="stylesheet" href="Styles/custom.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Item Management</h1>
+            <form id="itemForm">
+                <div class="form-group">
+                    <label for="itemno">Item Number:</label>
+                    <input type="text" id="itemno" name="itemno" required />
+                </div>
+                <div class="form-group">
+                    <label for="itemtype">Item Type:</label>
+                    <input type="text" id="itemtype" name="itemtype" required />
+                </div>
+                <div class="form-group">
+                    <label for="name">Item Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" required />
+                </div>
+                <div class="form-group">
+                    <label for="image">Image:</label>
+                    <input
+                        type="file"
+                        id="image"
+                        name="image"
+                        accept="image/*"
+                        required
+                    />
+                </div>
+                <button type="submit">Add Item</button>
+            </form>
 
-
-    <div class="container d-flex flex-wrap">
-        <!-- Menu Section -->
-        <div id="menu" class="col-md-8 pe-4 ">
-            <br><br>
-            <div id="menu-content" class="row row-cols-1 row-cols-md-3 g-4">
-                <!-- Menu items will be rendered dynamically here -->
+            <div class="search">
+                <label for="searchInput">Search Item:</label>
+                <input
+                    type="text"
+                    id="searchInput"
+                    onkeyup="searchItem()"
+                    placeholder="Search by name..."
+                />
             </div>
+
+            <table id="itemTable">
+                <thead>
+                    <tr>
+                        <th>Item Number</th>
+                        <th>Item Type</th>
+                        <th>Name</th>
+                        <th>Price(Rs.)</th>
+                        <th>Image</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- -->
+                </tbody>
+            </table>
         </div>
-    
-        <!-- Shopping Cart Section -->
-        <div id="shopping-cart" class="col-md-4">
-            <h2>Shopping Cart</h2>
-            <div id="customer-info" class="mb-3">
-                <div class="mb-2">
-                    <label for="existingCustomer" class="form-label">Select Existing Customer</label>
-                    <select id="existingCustomer" class="form-select" onchange="fillCustomerInfo()">
-                        <option value="">-- Select a customer --</option>
-                    </select>
-                </div>
-                <div class="mb-2">
-                    <label for="customerName" class="form-label">Name</label>
-                    <input type="text" id="customerName" class="form-control" placeholder="Enter your name">
-                </div>
-                <div>
-                    <label for="contactNo" class="form-label">Contact No</label>
-                    <input type="text" id="contactNo" class="form-control" placeholder="Enter your contact number">
-                </div>
-            </div>
-            <div id="cart-items"></div>
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <span class="total-price">Total: Rs.<span id="totalPrice">0.00</span></span>
-            </div>
-            <!-- <div class="mb-3">
-                <label for="discount" class="form-label">Discount</label>
-                <input type="number" id="discount" class="form-control" placeholder="Enter discount amount" min="0">
-            </div> -->
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <span class="Discount-price">Discount : Rs.<span id="totalPrice">0.00</span></span>
-            </div>
-           
-               
-                <!-- <button id="calculateTotal" style="background-color: #e27324cc;" class="btn btn-primary">Calculate Total</button> -->
-               
-            <button id="placeOrder" class="btn btn-success ms-3">Place Order</button>
-        </div>
-    </div>
-  
-
-<script src="scripts/Items.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+        <script src="Scripts/itemScripts.js"></script>
+    </body>
 </html>

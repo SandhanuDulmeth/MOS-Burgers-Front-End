@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MOS BURGERS</title>
+        <link rel="stylesheet" href="Styles/index.css" />
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
     
-        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-
-<style>
-    body{
-        background-color: rgb(0, 0, 0);
-    }
-     .container {
-            display: flex;
-            height: 100%;
-        }
-     #contentFrame {
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            /* border: none; */
-        }
-        .frame {
-            flex-grow: 1;
-        }
-
-        .sidebar {
-            width: 80px;
-            background-color: 21020;
-            color: white;
-            padding: 20px 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .sidebar a {
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
-            height: 60px;
-        }
-
-        .sidebar img {
-            width: 100px;
-            height: 80px;
-        }
-        .logo {
-            width: 100px ;
-           
-           
-        }
-</style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+    
+            .buttons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                padding: 10px;
+                background-color: #f8f8f8;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            .buttons img {
+                width: 50px;
+                height: auto;
+            }
+    
+            .frame {
+                flex-grow: 1;
+            }
+    
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+    
+            /* Responsive Styles */
+            @media (min-width: 768px) {
+                .container {
+                    flex-direction: row;
+                }
+    
+                .buttons {
+                    flex-direction: column;
+                    align-items: center;
+                    width: 150px;
+                    gap: 20px;
+                }
+    
+                .frame {
+                    flex-grow: 1;
+                }
+            }
+        </style>
         <script>
             function loadPage(page) {
-                document.getElementById('contentFrame').src = page;
+                document.getElementById("contentFrame").src = page;
             }
         </script>
     </head>
-
-<body>
-    
-    <div class="container">
-        <div class="sidebar" style="width: 130px;">
-            <img src="pictures/index/mosBurgerLogo.png" alt="" class="logo">
-            <a href="#" onclick="loadPage('mainPage.html')"><img src="pictures/ControllerPanel/Home.png" alt="Menu" class="side-item"></a>
-            <a href="#" onclick="loadPage('orders.html')"><img src="pictures/ControllerPanel/Orders.png" alt="Orders" class="side-item"></a>
-            <a href="#" onclick="loadPage('items.html')"><img src="pictures/ControllerPanel/Items.png" alt="Items" class="side-item"></a>
-            <a href="#" onclick="loadPage('customers.html')"><img src="pictures/ControllerPanel/Customers.png" alt="Customers" class="side-item"></a>
-            <a href="#" onclick="loadPage('reports.html')"><img src="pictures/ControllerPanel/Reports.png" alt="Reports" class="side-item"></a>
-          
+    <body>
+        <div class="container">
+            <div class="buttons">
+                <img src="Images/index/mosBurgerLogo.png" alt="Logo" />
+                <a href="#" onclick="loadPage('home.html')"
+                    ><img src="Images/ControllerPanel/Home.png" alt="Home"
+                /></a>
+                <a href="#" onclick="loadPage('menu.html')"
+                    ><img src="Images/Menu.png" alt="Menu"
+                /></a>
+                <a href="#" onclick="loadPage('orders.html')"
+                    ><img src="Images/Orders.png" alt="Orders"
+                /></a>
+                <a href="#" onclick="loadPage('items.html')"
+                    ><img src="Images/items.png" alt="Items"
+                /></a>
+                <a href="#" onclick="loadPage('customers.html')"
+                    ><img src="Images/Customers.png" alt="Customers"
+                /></a>
+                <a href="#" onclick="loadPage('reports.html')"
+                    ><img src="Images/Reports.png" alt="Reports"
+                /></a>
+            </div>
+            <div class="frame">
+                <iframe
+                    id="contentFrame"
+                    src="home.html"
+                    frameborder="0"
+                ></iframe>
+            </div>
         </div>
-        <div class="frame">
-            <iframe id="contentFrame" src="mainPage.html"></iframe>
-            
-        </div>
-    </div>
-
-
-
-
-    <script src="Scripts/controllerPanel.js"></script>
-</body>
-
+    </body>
 </html>
