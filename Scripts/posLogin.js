@@ -2,7 +2,7 @@ document.getElementById('posLoginButton').addEventListener('click', function() {
     const p = document.getElementById('username').value;
     const k = document.getElementById('password').value;
   
-    if (p === '%' && k === '') { 
+    if (p === 'Saman' && k === '@12') { 
         Swal.fire({
             position: "center",
             icon: "success",
