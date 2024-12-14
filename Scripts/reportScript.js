@@ -54,10 +54,14 @@ function processAndDisplayData(orders, todayString) {
     const sortedCustomers = Object.entries(customerOrderCount)
         .sort((a, b) => b[1] - a[1]);
     populateCustomerTable(sortedCustomers);
+   
 
     const sortedItems = Object.entries(itemCount)
         .sort((a, b) => b[1] - a[1]);
-    populateItemTable(sortedItems);
+       
+        generateChart1(sortedItems)
+   
+
 
     populateTransactionTable(todayTransactions);
 }
@@ -110,6 +114,42 @@ function populateCustomerTable(sortedCustomers) {
         `;
     });
 }
+function generateCustomerChart(sortedCustomers) {
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    if (sortedCustomers.length === 0) {
+        const noDataMessage = document.getElementById('chartMessage');
+        if (noDataMessage) {
+            noDataMessage.textContent = 'No customer data available for chart.';
+        }
+        return;
+    }
+
+    const labels = sortedCustomers.map(([customerName]) => customerName);
+    const data = sortedCustomers.map(([, orderCount]) => orderCount);
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Order Count',
+                data: data,
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+}
+
 
 function populateItemTable(sortedItems) {
     const itemTableBody = document.getElementById('itemTable').getElementsByTagName('tbody')[0];
@@ -131,6 +171,40 @@ function populateItemTable(sortedItems) {
         `;
     });
 }
+//////////////////////////////
+function generateChart1(sortedItems) {
+    const ctx = document.getElementById('myChart');
+
+    // Extract labels (item names) and data (quantities) from sortedItems
+    const labels = sortedItems.map(item => item[0]);
+    const data = sortedItems.map(item => item[1]);
+
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Quantity',
+          data: data,
+          borderWidth: 1,
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)'
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  }
+////////////////////////////////////////////////////////////////////
+
+
+  
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function generatePDFReport() {
     const { jsPDF } = window.jspdf;
