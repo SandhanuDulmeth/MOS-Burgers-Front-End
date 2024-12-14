@@ -4,37 +4,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function displayOrders() {
     const orderTableBody = document.getElementById('orderTableBody');
+    const noOrdersMessage = document.getElementById('noOrdersMessage');
     const orders = JSON.parse(sessionStorage.getItem('orders')) || [];
 
     orderTableBody.innerHTML = '';
+    if (orders.length === 0) {
+        noOrdersMessage.style.display = 'block';
+        return;
+    }
+    noOrdersMessage.style.display = 'none';
+
     orders.forEach((order, index) => {
         const row = document.createElement('tr');
 
-        const itemsList = Array.isArray(order.items) ? order.items.map(item => {
-            const quantity = Number(item.quantity) || 0;
-            const price = Number(item.price) || 0;
-            return `<li>${item.name || 'Unknown Item'} (x${quantity}) - Rs. ${(price * quantity).toFixed(2)}</li>`;
-        }).join('') : '<li>No items</li>';
-
-        const discount = Number(order.discount) || 0;
-        const totalPrice = Number(order.totalPrice) || 0;
+        const itemsList = Array.isArray(order.items)
+            ? order.items
+                  .map(
+                      (item) =>
+                          `<li>${item.name || 'Unknown Item'} (x${item.quantity || 0}) - Rs. ${(
+                              (item.price || 0) * (item.quantity || 0)
+                          ).toFixed(2)}</li>`
+                  )
+                  .join('')
+            : '<li>No items</li>';
 
         row.innerHTML = `
             <td>${index + 1}</td>
             <td>${order.customerName || 'No Name'}</td>
             <td>${order.contactNo || 'No Contact'}</td>
-            <td>
-                <ul>
-                    ${itemsList}
-                </ul>
-            </td>
-            <td>Rs. ${discount.toFixed(2)}</td>
-            <td>Rs. ${totalPrice.toFixed(2)}</td>
-            <td><button class="btn btn-sm" style="background-color: #e27324cc;" onclick="printOrderReport(${index})">Print Order Report</button></td>
+            <td><ul>${itemsList}</ul></td>
+            <td>Rs. ${(order.discount || 0).toFixed(2)}</td>
+            <td>Rs. ${(order.totalPrice || 0).toFixed(2)}</td>
+            <td><button class="btn btn-warning btn-sm" onclick="printOrderReport(${index})">Print Order Report</button></td>
         `;
         orderTableBody.appendChild(row);
     });
 }
+
 
 function saveOrdersToSessionStorage(orders) {
     sessionStorage.setItem('orders', JSON.stringify(orders));
