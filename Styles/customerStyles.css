@@ -88,13 +88,17 @@ textarea:focus {
 button {
     width: 100%;
     padding: 12px;
-
+    background-color: var(--dark-brown);
     border: none;
     border-radius: 6px;
-    color: #fff;
+    color: var(--white);
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3e362c;
 }
 
 .table-container {

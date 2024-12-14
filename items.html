@@ -1,149 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Menu and Shopping Cart</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="Styles/menuStyles.css" />
-      
-        <link rel="stylesheet" href="Styles/custom.css" />
-    </head>
-    <body>
-        <div class="container">
-            <!-- Menu -->
-            <div id="menu">
-                <div
-                    class="btn-group mb-3"
-                    role="group"
-                    aria-label="Category Buttons"
-                >
-                    <button
-                        type="button"
-                        class="btn btn-outline-primary rounded-4 mx-1 button"
-                        onclick="filterCategory('All')"
-                    >
-                        All
-                    </button>
-                    <button
-                        type="button"
-                        class="btn btn-outline-primary rounded-4 mx-1 button"
-                        onclick="filterCategory('Burger')"
-                    >
-                        Burger
-                    </button>
-                    <button
-                        type="button"
-                        class="btn btn-outline-primary rounded-4 mx-1 button"
-                        onclick="filterCategory('Submarine')"
-                    >
-                        Submarine
-                    </button>
-                    <button
-                        type="button"
-                        class="btn btn-outline-primary rounded-4 mx-1 button"
-                        onclick="filterCategory('Fries')"
-                    >
-                        Fries
-                    </button>
-                    <button
-                        type="button"
-                        class="btn btn-outline-primary rounded-4 mx-1 button"
-                        onclick="filterCategory('Pasta')"
-                    >
-                        Pasta
-                    </button>
-                    <button
-                        type="button"
-                        class="btn btn-outline-primary rounded-4 mx-1 button"
-                        onclick="filterCategory('Chicken')"
-                    >
-                        Chicken
-                    </button>
-                    <button
-                        type="button"
-                        class="btn btn-outline-primary rounded-4 mx-1 button"
-                        onclick="filterCategory('Beverage')"
-                    >
-                        Beverage
-                    </button>
-                </div>
 
-                <div id="menu-content"></div>
-            </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu and Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Styles/itemsCustom.css" />
 
-            <!-- Shopping Cart -->
-            <div id="shopping-cart">
-                <h2>Your Basket</h2>
-                <div id="customer-info" class="mb-3">
-                    <div class="mb-3 position-relative">
-                        <label for="searchInput" class="form-label"
-                            >Search Customer Name
-                        </label>
-                        <input
-                            type="text"
-                            id="searchInput"
-                            class="form-control"
-                            placeholder="Enter Customer Name"
-                        />
-                        <ul id="dropdownList" class="dropdown-list"></ul>
-                    </div>
-                    <div class="mb-2">
-                        <label for="customerName" class="form-label"
-                            >Name</label
-                        >
-                        <input
-                            type="text"
-                            id="customerName"
-                            class="form-control"
-                            placeholder="Enter your name"
-                        />
-                    </div>
-                    <div>
-                        <label for="contactNo" class="form-label"
-                            >Contact No</label
-                        >
-                        <input
-                            type="text"
-                            id="contactNo"
-                            class="form-control"
-                            placeholder="Enter your contact number"
-                        />
-                    </div>
-                </div>
-                <div id="cart-items"></div>
-                <div
-                    class="d-flex justify-content-between align-items-center mb-3"
-                >
-                    <span class="total-price"
-                        >Total: Rs.<span id="totalPrice">0.00</span></span
-                    >
-                </div>
-                <div class="mb-3">
-                    <label for="discount" class="form-label">Discount</label>
-                    <input
-                        type="number"
-                        id="discount"
-                        class="form-control"
-                        placeholder="Enter discount amount"
-                        min="0"
-                    />
-                </div>
-                <button id="calculateTotal" class="btn btn-primary">
-                    Calculate Total
+    <link rel="stylesheet" href="Styles/itemsStyles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Menu -->
+        <div id="menu">
+            <div class="btn-group mb-3" role="group" aria-label="Category Buttons">
+                <button type="button" class="btn btn-outline-primary rounded-4 mx-1 button"
+                    onclick="filterCategory('All')">
+                    All
                 </button>
-                <button id="placeOrder" class="btn btn-success">
-                    Place Order
+                <button type="button" class="btn btn-outline-primary rounded-4 mx-1 button"
+                    onclick="filterCategory('Burger')">
+                    Burger
+                </button>
+                <button type="button" class="btn btn-outline-primary rounded-4 mx-1 button"
+                    onclick="filterCategory('Submarine')">
+                    Submarine
+                </button>
+                <button type="button" class="btn btn-outline-primary rounded-4 mx-1 button"
+                    onclick="filterCategory('Fries')">
+                    Fries
+                </button>
+                <button type="button" class="btn btn-outline-primary rounded-4 mx-1 button"
+                    onclick="filterCategory('Pasta')">
+                    Pasta
+                </button>
+                <button type="button" class="btn btn-outline-primary rounded-4 mx-1 button"
+                    onclick="filterCategory('Chicken')">
+                    Chicken
+                </button>
+                <button type="button" class="btn btn-outline-primary rounded-4 mx-1 button"
+                    onclick="filterCategory('Beverage')">
+                    Beverage
                 </button>
             </div>
+
+            <div id="menu-content"></div>
         </div>
-<!-- <script src="Scripts/Items.js"></script> -->
-        <script src="Scripts/itemScript.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      
-    </body>
+
+        <!-- Shopping Cart -->
+        <div id="shopping-cart">
+            <h2>Your Basket</h2>
+            <div id="customer-info" class="mb-3">
+                <div class="mb-2">
+                    <label for="existingCustomer" class="form-label">Select Existing Customer</label>
+                    <select id="existingCustomer" class="form-select" onchange="fillCustomerInfo()">
+                        <option value="">-- Select a customer --</option>
+                    </select>
+                </div>
+                <!-- <div class="mb-3 position-relative">
+                    <label for="existingCustomer" class="form-label">Select Existing Customer</label>
+                    <select id="existingCustomer" class="form-select" onchange="fillCustomerInfo()">
+                        <option value="">-- Select a customer --</option>
+                    </select>
+                    <label for="searchInput" class="form-label">Search Customer Name
+                    </label>
+                    <input type="text" id="searchInput" class="form-control" placeholder="Enter Customer Name" />
+                    <ul id="dropdownList" class="dropdown-list"></ul>
+                </div> -->
+                <div class="mb-2">
+                    <label for="customerName" class="form-label">Name</label>
+                    <input type="text" id="customerName" class="form-control" placeholder="Enter your name" />
+                </div>
+                <div>
+                    <label for="contactNo" class="form-label">Contact No</label>
+                    <input type="text" id="contactNo" class="form-control" placeholder="Enter your contact number" />
+                </div>
+            </div>
+            <div id="cart-items"></div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="total-price">Total: Rs.<span id="totalPrice">0.00</span></span>
+            </div>
+            <div class="mb-3">
+                <label for="discount" class="form-label">Discount</label>
+                <input type="number" id="discount" class="form-control" placeholder="Enter discount amount" min="0" />
+            </div>
+            <button id="calculateTotal" class="btn btn-primary">
+                Calculate Total
+            </button>
+            <button id="placeOrder" class="btn btn-success">
+                Place Order
+            </button>
+        </div>
+    </div>
+
+    <script src="Scripts/itemScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
