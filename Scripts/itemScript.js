@@ -23,7 +23,7 @@ function loadItemsFromJSON() {
             items = JSON.parse(localStorage.getItem('items'));
             resolve(items);
         } else {
-            fetch('items.json')
+            fetch('json/items.json')
                 .then(response => response.json())
                 .then(data => {
                     items = data;
