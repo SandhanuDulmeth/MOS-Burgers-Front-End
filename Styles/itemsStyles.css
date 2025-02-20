@@ -2,82 +2,69 @@
     --primary-color: #ff6b6b;
     --secondary-color: #4ecdc4;
     --background-color: #f8f9fa;
-}
-
-body {
+  }
+  body {
     background-color: var(--background-color);
-}
-
-.container {
+  }
+  .container {
     padding: 2rem;
     max-width: 1400px;
-}
-
-.menu-header {
+  }
+  .menu-header {
     background: white;
     padding: 1rem;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
-}
-
-.category-btn {
+  }
+  .category-btn {
     transition: all 0.3s ease;
     border-radius: 25px !important;
     margin: 0.3rem;
-}
-
-.category-btn:hover {
+  }
+  .category-btn:hover {
     transform: translateY(-2px);
-}
-
-.menu-item-card {
+  }
+  .menu-item-card {
     background: white;
     border-radius: 15px;
     transition: all 0.3s ease;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.menu-item-card:hover {
+  }
+  .menu-item-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.item-image {
+  }
+  .item-image {
     height: 180px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
-}
-
-.cart-section {
-    background: white;
-    border-radius: 15px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 1rem;
-}
-
-.cart-item {
-    padding: 0.8rem 0;
-    border-bottom: 1px solid #eee;
-}
-
-.quantity-control {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.btn-custom {
+  }
+  .btn-custom {
     background: var(--primary-color);
     color: white;
     border-radius: 25px;
     padding: 0.5rem 1.5rem;
-}
-
-.btn-custom:hover {
+  }
+  .btn-custom:hover {
     background: #ff5252;
     color: white;
-}
+  }
+  /* Floating Order Button */
+  .order-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    color: rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }

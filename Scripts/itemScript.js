@@ -186,18 +186,17 @@ function placeOrder() {
     const totalPrice = calculateTotal();
 
     if (!customerName || !contactNo) {
-        alert('Please enter customer information');
+        Swal.fire("Please enter customer information");
         return;
     }
 
     let existingCustomer = customers.find(customer => customer.name === customerName && customer.phone === contactNo);
-
     if (!existingCustomer) {
-        const newCustomer = { name: customerName, phone: contactNo, email: '', address: '' }; 
+        const newCustomer = { name: customerName, phone: contactNo, email: '', address: '' };
         customers.push(newCustomer);
         localStorage.setItem('customers', JSON.stringify(customers));
-        populateCustomerDropdown(); 
-        alert('New customer added to customer list!');
+        populateCustomerDropdown();
+        Swal.fire("New customer added to customer list!");
     }
 
     const order = {
@@ -211,12 +210,13 @@ function placeOrder() {
         discount,
         totalPrice
     };
-
+    addOrder(order);
     orders.push(order);
     saveOrders(); 
 
     console.log('Order placed:', order);
-    alert('Order placed successfully!');
+
+    Swal.fire('Order placed successfully!');
 
     cart = [];
     document.getElementById('customerName').value = '';
@@ -224,6 +224,10 @@ function placeOrder() {
     document.getElementById('discount').value = '';
     renderCart();
 }
+
+// if (window.parent && typeof window.parent.loadPage === 'function') {
+//     window.parent.loadPage('orders.html');
+// }
 
 window.onload = function () {
     loadItemsFromJSON().then(() => {
@@ -234,7 +238,7 @@ window.onload = function () {
     });
 };
 
-document.getElementById('calculateTotal').addEventListener('click', showTotal);
+
 document.getElementById('placeOrder').addEventListener('click', placeOrder);
 
 loadItemsFromJSON();
