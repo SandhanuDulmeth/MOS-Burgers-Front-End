@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
   resetEmailInput.disabled = true;
   loginButton.disabled = true;
   resetPasswordButton.disabled = true;
-
+  emailInput.addEventListener("input", function () {
+    resetEmailInput.value = emailInput.value;
+  });
   function toggleLoginButton() {
     loginButton.disabled = passwordInput.value.trim() === "";
   }
@@ -34,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("http://localhost:8080/AdminController/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({email: this.email,password: this.password }),
     })
       .then((response) => response.text())
       .then((result) => {
@@ -90,12 +92,12 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("http://localhost:8080/api/auth/resetPassword", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, resetCode, newPassword }),
+      body: JSON.stringify({ email: this.email, otp: this.resetCode, newPassword: this.newPassword }),
     })
-      .then((response) => response.text())
-      .then((result) => {
-        Swal.fire(result === "true" ? "Password Reset Successful" : "Invalid OTP or Email");
-      })
+    .then((response) => response.json())
+    .then((result) => {
+      Swal.fire(result ? "Password Reset Successful" : "Invalid OTP or Email");
+    })
       .catch((error) => console.error(error));
   });
 
