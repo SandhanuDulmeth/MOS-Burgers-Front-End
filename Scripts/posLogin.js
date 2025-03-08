@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("http://localhost:8080/AdminController/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({email: this.email,password: this.password }),
+      body: JSON.stringify({email: email,password: password }),
     })
       .then((response) => response.text())
       .then((result) => {
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("http://localhost:8080/api/auth/resetPassword", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: this.email, otp: this.resetCode, newPassword: this.newPassword }),
+      body: JSON.stringify({ email: email, otp: resetCode, newPassword: newPassword }),
     })
     .then((response) => response.json())
     .then((result) => {
